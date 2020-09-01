@@ -1,9 +1,13 @@
 # docker-ttrss
 
-This [Docker](https://www.docker.com) image allows you to run the [Tiny Tiny RSS](http://tt-rss.org) feed reader.
-Keep your feed history to yourself and access your RSS and atom feeds from everywhere.
-You can access it through an easy to use webinterface on your desktop, your mobile browser
-or using one of the available apps.
+Forked from [clue/docker-ttrss](https://github.com/clue/docker-ttrss)
+
+### updated
+ - [php 7 alpine](https://github.com/docker-library/php/blob/165f8ca09cbbe90f22566c6ad6b18a284b77bb7e/7.4/alpine3.12/fpm/Dockerfile)
+
+### added
+- plugin - [fever](https://github.com/HenryQW/tinytinyrss-fever-plugin)
+- theme - [rsshub](https://github.com/DIYgod/ttrss-theme-rsshub)
 
 ## About Tiny Tiny RSS
 
@@ -184,3 +188,7 @@ minimum:
 ```bash
 $ docker run -d --link tinydatabase:db -p 80:80 clue/ttrss
 ```
+
+## Reference
+
+* [HenryQW/Awesome-TTRSS](https://github.com/HenryQW/Awesome-TTRSS)
